@@ -43,6 +43,7 @@ def main():
                     sqSelected = (row, col)
                     playerClicks.append(sqSelected)
                 if len(playerClicks) == 2:
+                    print('here')
                     move = ChessEngine.Move(playerClicks[0], playerClicks[1], gs.board)
                     for i in range(len(validMoves)):
                         if move == validMoves[i]:
