@@ -118,7 +118,6 @@ class GameState():
             self.makeMove(moves[i])
             self.whiteToMove = not self.whiteToMove
             if self.inCheck():
-                #print(len(moves))
                 moves.remove(moves[i])
             self.whiteToMove = not self.whiteToMove
             self.undoMove()
